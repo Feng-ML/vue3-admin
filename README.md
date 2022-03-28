@@ -1,24 +1,25 @@
-# vue3-admin
+## 个人网站
 
-## Project setup
-```
-npm install
-```
+安装依赖：
+> npm i  
+> npm run client-install
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+本地开发：
+> npm run dev
 
-### Compiles and minifies for production
-```
-npm run build
-```
+展示：www.fengml.top
+  
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 更新
+2021-04-14
+- 新增墨斗建店平台大数据
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+2021-03-30
+- 新增疫情实时大数据展示
+
+2021-03-25
+- 添加了组件路由并加了一些组件
+  
+2020-10-03
+- 添加了图表路由  
+- 利用echarts对数据可视化处理。
