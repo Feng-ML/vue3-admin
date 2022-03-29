@@ -82,7 +82,7 @@ export default {
       password: ''
     })
     const registerFormRef = ref(null)
-
+ 
     const registerRules = reactive({
       account: [
         { required: true, message: '请输入账号', trigger: 'change' },
