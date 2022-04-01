@@ -3,6 +3,10 @@ module.exports = defineConfig({
   transpileDependencies: true,
   lintOnSave: false,
 
+  devServer: {
+    port: 8848,
+  },
+
   css:{
     loaderOptions:{
       sass: {

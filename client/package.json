@@ -9,6 +9,7 @@
     "start": "npm run serve"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "core-js": "^3.8.3",
     "element-plus": "^2.1.7",
     "sass-resources-loader": "^2.2.4",
@@ -25,6 +26,8 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
+    "eslint-config-alloy": "^4.5.1",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0"

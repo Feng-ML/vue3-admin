@@ -5,7 +5,7 @@ const Schema = mongoose.Schema
 
 const userSchema = new Schema({
 
-    name:{
+    account:{
         type: String,     //类型
         required: true   //是否必填
     },

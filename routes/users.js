@@ -13,22 +13,20 @@ router.get('/', (req, res) => {
     .post('/register', (req, res) => {
     console.log(req.body)
 
-    User.findOne({email: req.body.email})
+    User.findOne({account: req.body.account})
         .then( user => {
-
+            // console.log(user)
             if( user ){
-                // console.log('该邮箱已被注册')
-                return res.status(400).json('该邮箱已被注册')
+                return res.status(400).json('该账号已被注册')
             }else{
                 // console.log('该邮箱可以使用')
                 const newUser = new User({
                     email: req.body.email,
-                    name: req.body.username,
-                    password: req.body.pass,
+                    account: req.body.account,
+                    password: req.body.password,
                     avatar: ''
                 })
                 
-
                 //保存用户数据
                 newUser.save()
                     .then(user => {
@@ -39,7 +37,7 @@ router.get('/', (req, res) => {
                     })
             }
         })
-})
+    })
 
 
 
@@ -47,12 +45,12 @@ router.get('/', (req, res) => {
 router.post('/login', (req, res) => {
 
 
-    User.findOne({email: req.body.email})
+    User.findOne({account: req.body.account})
         .then( user => {
-            // console.log(req.body)
+            console.log(req.body)
             if( user ){
 
-                if( req.body.pass == user.password ){
+                if( req.body.password == user.password ){
                     console.log('登录成功')
                     return res.json(user)
                 }else{
