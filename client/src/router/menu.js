@@ -36,16 +36,7 @@ export default [
           title: '账号管理',
           icon: 'document-copy',
         },
-        children: [{
-          id: 'login',
-          name: 'login',
-          path: '/login',
-          meta:{
-            title: '登录',
-            icon: 'login',
-          },
-          children: []
-        }]
+        children: []
       }
     ]
   }

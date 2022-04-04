@@ -242,7 +242,7 @@ export default {
     line-height: 1.5;
     font-size: 40px;
     color: rgb(243, 243, 243);
-    text-shadow: 5px 5px 5px $main-color;
+    // text-shadow: 5px 5px 5px $main-color;
   }
 
   .login-box{
